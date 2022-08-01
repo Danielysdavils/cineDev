@@ -1,6 +1,6 @@
 require("dotenv").config() 
 const request = require('supertest')
-const port = process.env.PORTA
+const port = process.env.PORT
 const UrlAPI = `http://localhost:${port}`
 
 describe('UrlAPI', () => {
