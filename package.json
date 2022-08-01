@@ -25,7 +25,7 @@
   "contributors": [],
   "scripts": {
     "start": "node ./src/index.js",
-    "start dev": "nodemon ./src/index.js",
+    "start dev": "nodemon ./cineDev/src/index.js",
     "test": "jest"
   },
   "devDependencies": {
