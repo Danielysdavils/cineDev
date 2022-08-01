@@ -1,8 +1,8 @@
 import { FilmeDAO }from '../DAO/filmes-DAO.js'
-import { bd} from "../infra/bdSQLite-filmes.js";
 import { Filme } from "../models/filmes-model.js";
 
-export const filmes = (app) => {
+export const filmes = (app, bd) => {
+
   const FilmesDAO = new FilmeDAO(bd)
   app.get("/filmes", (req, res) => {
     FilmesDAO.listarFilme()
